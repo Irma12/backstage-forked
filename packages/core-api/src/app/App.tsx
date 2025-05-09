@@ -212,7 +212,7 @@ export class PrivateAppImpl implements BackstageApp {
         return loadedConfig.node;
       }
 
-      this.configApi = loadedConfig.api;
+      this.configApi = loadedConfig.apis;
 
       return (
         <ApiProvider apis={this.getApiHolder()}>
