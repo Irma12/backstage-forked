@@ -207,6 +207,7 @@ export class PrivateAppImpl implements BackstageApp {
         appThemeApi,
       );
 
+
       if ('node' in loadedConfig) {
         // Loading or error
         return loadedConfig.node;
@@ -218,6 +219,7 @@ export class PrivateAppImpl implements BackstageApp {
         <ApiProvider apis={this.getApiHolder()}>
           <AppContextProvider app={this}>
             <AppThemeProvider>{children}</AppThemeProvider>
+
           </AppContextProvider>
         </ApiProvider>
       );
